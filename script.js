@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    let posicaoAnteriorX = 0;
+    let posicaoAnteriorY = 0;
+    const distanciaMinima = 150;
+
     $('#btNao').on('mouseover', function() {
         const container = $('.botoes');
         const larguraContainer = container.width();
@@ -7,8 +11,18 @@ $(document).ready(function() {
         const larguraBotao = $(this).outerWidth();
         const alturaBotao = $(this).outerHeight();
 
-        const novaPosicaoX = Math.random() * (larguraContainer - larguraBotao);
-        const novaPosicaoY = Math.random() * (alturaContainer - alturaBotao);
+        let novaPosicaoX, novaPosicaoY;
+        let distancia;
+
+        do {
+            novaPosicaoX = Math.random() * (larguraContainer - larguraBotao);
+            novaPosicaoY = Math.random() * (alturaContainer - alturaBotao);
+
+            distancia = Math.sqrt(Math.pow(novaPosicaoX - posicaoAnteriorX, 2) + Math.pow(novaPosicaoY - posicaoAnteriorY, 2));
+        } while (distancia < distanciaMinima);
+
+        posicaoAnteriorX = novaPosicaoX;
+        posicaoAnteriorY = novaPosicaoY;
 
         $(this).css({
             position: 'absolute',
