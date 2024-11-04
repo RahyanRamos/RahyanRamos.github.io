@@ -37,16 +37,16 @@ $(document).ready(function() {
         $(".botoes").css("display", "none");
 
         const gifs = [
-            "https://media.tenor.com/O7VXvlDQWbEAAAAi/excited-cat.gif",
-            "https://media.tenor.com/UhqVAq_VjwUAAAAi/squibi-196.gif",
-            "https://media1.tenor.com/m/AgeYHBN9m9EAAAAd/perro-brazil.gif",
             "https://media1.tenor.com/m/R7wWPCzS9PgAAAAd/shrek-green-lantern.gif",
             "https://media1.tenor.com/m/kglDzTqoEUAAAAAC/maxwell-cat.gif",
+            "https://media1.tenor.com/m/AgeYHBN9m9EAAAAd/perro-brazil.gif",
+            "https://media.tenor.com/kVLRfEhVYAwAAAAi/fuerza-gabriel-barbosa.gif",
+            "https://media.tenor.com/wu-feCuQpQAAAAAi/neymar-ney.gif",
+            "https://media.tenor.com/O7VXvlDQWbEAAAAi/excited-cat.gif",
+            "https://media.tenor.com/UhqVAq_VjwUAAAAi/squibi-196.gif",
             "https://media.tenor.com/oyFfNb4Wj_cAAAAi/spongebob-dance-spongebob-joget.gif",
             "https://media.tenor.com/kQA86PqyXZQAAAAi/small-dancing-white-cat-dance-funny.gif",
-            "https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif",
-            "https://media.tenor.com/kVLRfEhVYAwAAAAi/fuerza-gabriel-barbosa.gif",
-            "https://media.tenor.com/wu-feCuQpQAAAAAi/neymar-ney.gif"
+            "https://media.tenor.com/h06DzEZ1neoAAAAi/dance-dog.gif"
         ];
 
         $("#gifsContainer").empty();
