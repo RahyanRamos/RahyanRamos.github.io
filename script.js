@@ -1,6 +1,5 @@
 $(document).ready(function() {
     $('#btNao').on('mouseover', function() {
-
         const container = $('.botoes');
         const larguraContainer = container.width();
         const alturaContainer = container.height();
