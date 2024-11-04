@@ -3,20 +3,23 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: 'Arial', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #1e1e1e;
     color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
-    text-align: center;
-    margin-bottom: auto;
-    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Mantém o título no topo */
+    align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+}
+
+.pergunta {
+    padding-top: 20px; /* Espaçamento superior do título */
 }
 
 .pergunta h1 {
@@ -26,17 +29,14 @@ body, html {
 }
 
 .botoes {
-    position: relative;
-    margin-top: 30px;
+    flex: 1; /* Ocupar todo o espaço disponível abaixo do título */
     display: flex;
     justify-content: center;
-    gap: 30px;
-    height: 100%;
-    width: 100vw;
+    align-items: center;
+    width: 100vw; /* Ocupa toda a largura da tela */
 }
 
 button {
-    position: relative;
     padding: 16px 40px;
     font-size: 1.5rem;
     cursor: pointer;
@@ -50,6 +50,7 @@ button {
         0 0 20px rgba(51, 51, 255, 0.5),
         0 0 30px rgba(0, 255, 255, 0.5);
     height: 80px;
+    margin: 0 20px; /* Espaçamento entre os botões */
 }
 
 button:hover {
