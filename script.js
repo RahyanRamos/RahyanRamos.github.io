@@ -2,7 +2,6 @@ $(document).ready(function() {
     let posicaoAnteriorX = 0;
     let posicaoAnteriorY = 0;
     const distanciaMinima = 150;
-    const gifPositions = [];
 
     $("#btNao").on("mouseover", function() {
         const container = $(".botoes");
@@ -50,24 +49,10 @@ $(document).ready(function() {
         ];
 
         $("#gifsContainer").empty();
-        gifPositions.length = 0;
 
         gifs.forEach(gif => {
-            let novaPosicaoX, novaPosicaoY;
-            let posicaoValida = false;
-
-            while (!posicaoValida) {
-                novaPosicaoX = Math.random() * ($(window).width() - 200);
-                novaPosicaoY = Math.random() * ($(window).height() - 200);
-
-                posicaoValida = gifPositions.every(pos => {
-                    const distancia = Math.sqrt(Math.pow(novaPosicaoX - pos.x, 2) + Math.pow(novaPosicaoY - pos.y, 2));
-                    return distancia > distanciaMinima;
-                });
-            }
-
-            gifPositions.push({ x: novaPosicaoX, y: novaPosicaoY });
-
+            const novaPosicaoX = Math.random() * ($(window).width() - 200);
+            const novaPosicaoY = Math.random() * ($(window).height() - 200);
             $("#gifsContainer").append(`<img src="${gif}" alt="Meme GIF" style="position:absolute; left:${novaPosicaoX}px; top:${novaPosicaoY}px;">`);
         });
     });
