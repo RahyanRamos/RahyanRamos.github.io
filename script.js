@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    $('#btNao button').on('mouseover', function() {
-        const container = $('.botoes');
+    $('#btNao').on('mouseover', function() {
 
+        const container = $('.botoes');
         const larguraContainer = container.width();
         const alturaContainer = container.height();
 
