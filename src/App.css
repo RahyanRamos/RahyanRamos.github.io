@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+/* Define as variáveis de cores para o tema light */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #282c34;
+  --link-color: #61dafb;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Sobrescreve as variáveis para dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --primary-color: #282c34; /* Pode manter ou ajustar conforme a necessidade */
+    --link-color: #bb86fc;
   }
 }
 
+/* Aplica as variáveis no corpo e demais elementos */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.Portfolio {
+  text-align: center;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: var(--primary-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text-color);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--link-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Outros estilos existentes, adaptados se necessário */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.container {
+  margin: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }

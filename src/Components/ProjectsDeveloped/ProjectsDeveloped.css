@@ -1,0 +1,21 @@
+.project {
+    background-color: #eafaf1;
+    border: 1px solid #27ae60;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+    
+.project-name {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+  
+.project-description {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.5;
+}

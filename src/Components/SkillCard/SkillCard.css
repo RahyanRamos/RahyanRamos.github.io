@@ -1,0 +1,27 @@
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center;  /* Centraliza o texto dentro do card */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #eafaf1;
+    padding: 20px;
+    margin: 10px;
+    max-width: 250px;
+}
+
+.skill-card h3 {
+    color: #2ecc71;
+}
+
+.skill-card p {
+    color: #27ae60;
+}
+
+.skill-card__logo {
+    width: 100px; /* Defina o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Opcional: arredonda os cantos da imagem */
+}

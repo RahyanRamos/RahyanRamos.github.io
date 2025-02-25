@@ -1,0 +1,17 @@
+.contact {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.contact__link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.contact__icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+  
